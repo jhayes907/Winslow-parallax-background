@@ -1,6 +1,8 @@
 body {
     background: black;
 }
+
+/* container for the game speed slider */
 #container{
     position: absolute;
     width: 800px;
@@ -10,6 +12,8 @@ body {
     
     font-size: 20px;
 }
+
+/* canvas size and position  */
 #canvas1 {
     position: relative;
     border: 3px solid white;
@@ -17,6 +21,7 @@ body {
     height: 700px;
 }
 
+/* slider size takes up width of the canvas and text color is white to offset background */
 #slider {
     width: 100%;
 }

@@ -10,6 +10,7 @@ const spriteHeight = 523;
 let gameSpeed = 3;
 let gameFrame = 0;
 
+// 5 layers of the game background images
 const backgroundLayer1 =new Image();
 backgroundLayer1.src = './images/layer-1.png';
 const backgroundLayer2 =new Image();
@@ -20,6 +21,7 @@ const backgroundLayer4 =new Image();
 backgroundLayer4.src = './images/layer-4.png';
 const backgroundLayer5 =new Image();
 backgroundLayer5.src = './images/layer-5.png';
+
 
 window.addEventListener('load', function() {
     const slider = document.getElementById('slider');
@@ -64,7 +66,7 @@ window.addEventListener('load', function() {
     
     const gameObjects = [layer1, layer2, layer3, layer4, layer5]
     
-    
+    // background animation loop function.
     function animate() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         gameObjects.forEach(object => {
